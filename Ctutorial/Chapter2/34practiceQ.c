@@ -11,7 +11,8 @@ int main() {
     scanf("%d", &num2);
 
     // scanf("%d %d", &num1, num2);
-
-    printf("%d", num1 < num2);
+// using ternary operator 
+// condition? if true.. : if false..
+    num1 < num2 ? printf("%d", num1) : printf("%d", num2);
     return 0;
 }
