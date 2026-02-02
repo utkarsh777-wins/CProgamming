@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+// infinite loop
 int main() {
     for(int i=1; ; i++) {  //left the condition empty
         printf("%d\n", i);
