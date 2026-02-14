@@ -2,8 +2,8 @@
 
 int main(){
 
-    // printf("C-piled!!!!!");
-    // printf("It feels good!");
+    printf("C-piled!!!!!");
+    printf("It feels good!");
 
-    // return 0;
+    return 0;
 }
