@@ -35,7 +35,7 @@ int  main() {
             // printf("%d" , i);
         }
         if(vd == 0) {
-            printf("%d\n", a);
+            printf("%d\t", a);
         }
         a++;
     }

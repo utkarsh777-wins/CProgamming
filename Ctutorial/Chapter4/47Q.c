@@ -17,16 +17,34 @@
 // armstrong number
 
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    int n;
-    printf("enter your number: ");
-    scanf("%d", &n);
+    int num, result=0, remainder, n=0;
+    printf("Enter: ");
+    scanf("%d", &num);
 
-    int digit;
-    while(n != 0) {
-        digit = n/2;
-        printf("%d", digit);
-        n = n/10;
+    int og = num;
+
+    // helps find the number of digits
+    int temp = num;
+    while(temp != 0) {
+        temp = temp/10;
+        n=n+1;  
     }
+
+    // squaring the digits of the number
+    temp = num;
+    while(temp != 0) {
+        remainder = temp%10;
+
+        result += pow(remainder, n);
+        temp = temp/10;
+    }
+
+    // check
+    if(num == result) {printf("%d is an armstrong number", num);}
+    else {printf("%d is not an armstrong numbeer", num);}
+
+    return 0;
 }
