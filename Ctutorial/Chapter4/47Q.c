@@ -33,7 +33,7 @@ int main() {
         n=n+1;  
     }
 
-    // squaring the digits of the number
+    // powering the digits of the number
     temp = num;
     while(temp != 0) {
         remainder = temp%10;
