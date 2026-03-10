@@ -1,21 +1,20 @@
-// faboonacci sequence
 #include <stdio.h>
 
-int fabo(int n);
-
-int main() {
-    int n;
-    printf("enter you number till sequence: ");
-    scanf("%d", &n);
+int fibo(int n) {
+    if(n == 0) {return 0;}
+    else if(n == 1) {return 1;}
+    else {
+        return fibo(n-1) + fibo(n-2);
+    }
 }
 
-int fabo(int n) {
+int main() {
+    int i;
+    printf("enter the count of the sequence: ");
+    scanf("%d", &i);
+    for(int  j=0; j<=i; j++){
+        printf("%d\t", fibo(j));
+    }
 
-    int fab;
-    if(n==0) {return 0;}
-    if(n==1) {return 1;}
-    int nm1 = fabo(n-1);
-    int nm2 = fabo(n-2);
-    fab = nm1 + nm2;
-    printf("fab: %d", fab);
+    return 0;
 }
