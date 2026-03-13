@@ -9,7 +9,7 @@ int main() {
     if(n == 0) {
         goto shutdown;
     }
-    printf("runnnnnnnnnnN!\n");
+    else{printf("RunnNNNNNN\n");}
 
     shutdown:
     printf("hah! you're done for\n");

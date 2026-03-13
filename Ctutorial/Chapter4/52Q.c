@@ -5,7 +5,7 @@ int main() {
     printf("Enter : ");
     scanf("%d", &num);
 
-    for(int i=1; i<= num; i++) {
+    for(int i=1; i<=num; i++) {
         int next = prev+current;
         printf("%d\t", next);
         prev = current;
