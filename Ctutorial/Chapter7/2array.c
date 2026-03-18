@@ -3,7 +3,7 @@
 int main() {
     int marks[5];
 
-    printf("enter marks in maaths: ");
+    printf("enter marks in maths: ");
     scanf("%d", &marks[0]);
 
     printf("enter marks in physics: ");
@@ -16,5 +16,6 @@ int main() {
     scanf("%d", &marks[3]);
 
 
-    printf("array: %d, %d, %d, %d, x", marks[0], marks[1], marks[2], marks[3]);  
+    printf("array: %d, %d, %d, %d, x", marks[0], marks[1], marks[2], marks[3]); 
+
 }

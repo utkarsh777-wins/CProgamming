@@ -1,26 +1,24 @@
-// fabonacci sequence
 #include <stdio.h>
 
 int fibonacci(int n);
-
 int main() {
     int num;
     printf("enter your number: ");
-    scanf("%d",  &num);
+    scanf("%d", &num);
 
     printf("%d", fibonacci(num));
-    
+
     return 0;
 }
 
 int fibonacci(int n) {
 
-    // base case
-    if(n == 0) {return 0;}
+    if(n == 0) {return 1;}
     if(n == 1) {return 1;}
-    
-    int fnM1 = fibonacci(n-1);
-    int fnM2 = fibonacci(n-2);
-    int fibo = fnM1 + fnM2;
+
+    int a = fibonacci(n-1);
+    int b = fibonacci(n-2);
+    int fibo = a + b;
+    printf("%d\n", fibo);
     return fibo;
 }

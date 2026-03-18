@@ -6,7 +6,7 @@ void printHW(int count);
 
 
 int main() {
-    printHW(5);
+    printHW(90);
     return 0;
 }
 
