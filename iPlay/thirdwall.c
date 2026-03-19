@@ -9,6 +9,7 @@ int fibo(int n) {
 }
 
 void printFibo(int i) {
+    printf("Your Fibonacci Sequence: \n");
     for(int j=1; j<=i; j++) {
         printf("%d\t", fibo(j));
     }
@@ -18,7 +19,7 @@ int main() {
 
 
     int i;
-    printf("enter the count of the sequence: ");
+    printf("ENTER SQUENCE COUNT: ");
     scanf("%d", &i);
 
 
