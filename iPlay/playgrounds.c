@@ -49,39 +49,78 @@
 // void no() {
 //     printf("noooooooooo!");
 // }
-#include <stdio.h>
 
+// int main() {
+    //     int a[9];
+    //     takeInput(a, 9);
+    //     printArray(a, 9);
+    
+    //     return 0;
+    // }
+    // int main() {
+        //     int n;
+        //     printf("number of elements inside the array: ");
+//     scanf("%d", &n);
+
+//     int arr[n];
+//     for(int i=0; i<n; i++) {
+    //         scanf("%d", &arr[i]);
+    //     }
+    //     for(int i=0; i<n; i++) {
+        //         printf("%d ", *(arr+i));
+        //     }
+        
+        //     return 0;
+        // }
+#include <stdio.h>
+ 
+// integer based functions
 int takeInput(int arr[], int n) {
     for(int i=1; i<n; i++) {
         scanf("%d", &arr[i]);
     }
 }
-
+        
 void printArray(int arr[], int n) {
     for(int i=1; i<n; i++) {
         printf("%d ", arr[i]);
     }
 }
 
-// int main() {
-//     int a[9];
-//     takeInput(a, 9);
-//     printArray(a, 9);
-    
-//     return 0;
-// }
-int main() {
-    int n;
-    printf("number of elements inside the array: ");
-    scanf("%d", &n);
+int maxVal(int arr[], int n) {
+    int max = arr[0];
+    for(int i=0; i<n; i++) {
+        if(arr[i]>max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
 
-    int arr[n];
+int minVal(int arr[], int n) {
+    int min = arr[0];
     for(int i=0; i<n; i++) {
-        scanf("%d", &arr[i]);
+        if(arr[i]<min) {
+            min = arr[i];
+        }
     }
-    for(int i=0; i<n; i++) {
-        printf("%d ", arr[i]);
+    return min;
+}
+
+int averageMarks(int arr[], int n) {
+    int sum = 0;
+    for(int i=1; i<n; i++) {
+        sum += arr[i];
     }
+    return sum/n;
+
+}
+
+int main() {
+    int a[5] = {5, 10, 38, 4, 15};
+    printf("%d\n", maxVal(a, 5));
+    printf("%d\n", minVal(a, 5));
+    printf("%d\n", averageMarks(a, 5));
 
     return 0;
 }
