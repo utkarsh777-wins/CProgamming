@@ -34,9 +34,13 @@ int main() {
     adjective3[strlen(adjective3) - 1] = '\0';
 
     //story time
-    printf("%s\n", adjective1);
-    printf("%s\n", noun);
-    printf("%s\n", adjective2);
-    printf("%s\n", verb);
-    printf("%s\n", adjective3);
+    printf("once opon a time I was at a %s location\n", adjective1);
+    printf("right there I met a %s\n", noun);
+    printf("the looked so %s\n ", adjective2);
+    printf("it was %s as if it didn't even notice me\n", verb);
+    printf("that felt so %s haha\n", adjective3);
+
+    //need to add some more proper grammer, as I am currently studying grammer so it's only right that I appply my learnings
+    //add adverbs to this game
+    //a better story I'd need
 }
