@@ -70,12 +70,23 @@ int main() {
 
     int sum = 0;
     printf("Diagonal Elements: \n");
+    // method 1 time-space inefficiency
+    // for(int i=0; i<3; i++) {
+    //     for(int j=0; j<3; j++) {
+    //         if(i==j) {
+    //             printf("%d ", A[i][i]);
+    //         }
+    //         // printf("\n");
+    //     }
+    // }
+    // method 2 optimal 
     for(int i=0; i<3; i++) {
         printf("%d ", A[i][i]);
         sum += A[i][i];
     }
     printf("\n");
     printf("SUM of diagonal elements: %d ", sum);
-}
 
-//diagonal elemnts of the matrix
+
+    return 0;
+}

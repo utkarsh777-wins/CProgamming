@@ -43,3 +43,5 @@ int main() {
 
     return 0;
 }
+
+// need to make this so it can take multiple type of inputs

@@ -10,6 +10,7 @@ int main() {
 
 
     // ptr = &bill;
+    
     // // type conversion
     // printf("Bill amount = %d", *(int*)ptr);
 
@@ -17,6 +18,7 @@ int main() {
     // printf("\nSymbol = %c", *(char*)ptr);
 
     void *ptr = NULL;
+    void *pptr = NULL;
 
     // ptr = &bill;
 
@@ -27,5 +29,8 @@ int main() {
     // printf("%.1f\n", *(float*)ptr);
 
     // ptr = 
+    // defaults to null if no not initialised or deleted
+
+
     return 0;
 }

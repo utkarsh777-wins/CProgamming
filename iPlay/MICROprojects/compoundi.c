@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+
+// need proper validate input fuinctions in this 
 double compoundInterest(double principal, double rate, double time, int timesCompounded, double total);
 
 int main() {

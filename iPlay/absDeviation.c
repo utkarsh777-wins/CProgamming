@@ -12,15 +12,21 @@ int main() {
     if(scanf("%d", &n) != 1) return 0;
 
     int sum = 0;
-    int m[n];
+    // int arr[n];
+    int *arr = (int *)malloc(n * sizeof(int));      
+    
+    // read the inputs and calculae the sum
     for(int i=0; i<n; i++) {
-        scanf("%d", &m[i]);
-        sum += m[i];
+        scanf("%d", &arr[i]);
+        sum += arr[i];
     }
+    
     double mean = sum/n;
 
-    calculateAbsoluteDeviation(m, n, mean);
+    calculateAbsoluteDeviation(arr, n, mean);
 
+    free(arr);
+    return 0;
 }
 
 void calculateAbsoluteDeviation(int *arr, int n, double mean) {

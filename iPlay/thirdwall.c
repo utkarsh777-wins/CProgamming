@@ -19,9 +19,8 @@ int main() {
 
 
     int i;
-    printf("ENTER SQUENCE COUNT: ");
+    printf("ENTER SEQUENCE COUNT: ");
     scanf("%d", &i);
-
 
 
     // for(int  j=0; j<=i; j++){

@@ -10,7 +10,7 @@ int main() {
 
     //making it so the range of the random number is in b/w 1-100
     rnd = (rand() % 100) + 1;
-    
+
     while(1) {
 
         // user input
@@ -31,3 +31,4 @@ int main() {
 
     return 0;
 }
+//enhance the current interface 
