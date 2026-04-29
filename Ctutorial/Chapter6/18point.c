@@ -10,4 +10,6 @@ int main() {
     float* pF = &f;
     char* pStar = &star;
     double* pDD = &dd;
+
+    
 }
