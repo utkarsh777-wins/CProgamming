@@ -1,0 +1,1 @@
+//pointer allocation

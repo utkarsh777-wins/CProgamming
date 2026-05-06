@@ -1,4 +1,5 @@
 #include <stdio.h>
+//deleting first idx 
 
 int main() {
 
