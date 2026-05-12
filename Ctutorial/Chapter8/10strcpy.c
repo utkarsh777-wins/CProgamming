@@ -3,9 +3,16 @@
 
 int main() {
 
-    char str[100];
-    strcpy(str, "utkarsh, it's gonna be an endless peak!");
-    puts(str);
+    //manual copying 
+    // char str[100];
+    // strcpy(str, "utkarsh, it's gonna be an endless peak!");
+    // puts(str);
 
-    return 0;
+    char oldStr[] = "burglur";
+    char newStr[] = "Pieehhha";
+
+    strcpy(newStr, oldStr);
+
+    printf("%s\n", newStr);
+
 }
