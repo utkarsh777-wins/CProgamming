@@ -58,10 +58,11 @@ int main() {
     
     return 0;
     
-    //rotating an array and that shady pattern with stars 
-
-
-
     
-
+    
+    
+    
+    
 }
+
+//rotating an array and that shady pattern with stars 

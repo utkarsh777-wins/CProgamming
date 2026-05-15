@@ -11,19 +11,19 @@ int main() {
         if( marks > 30 && marks < 50) {         
             printf("D \n");
         }
-        else if(marks > 50 && marks < 60) {
+        else if(marks >= 50 && marks < 60) {
             printf("C \n");
         }
-        else if(marks > 60 && marks < 70) {
+        else if(marks >= 60 && marks < 70) {
             printf("B \n");
         }
-        else if(marks > 70 && marks <80) {
+        else if(marks >= 70 && marks <80) {
             printf("A \n");
         }
-        else if(marks > 80 && marks < 90) {
+        else if(marks >= 80 && marks < 90) {
             printf("A+ \n");
         }
-        else if(marks > 90) {
+        else if(marks >= 90) {
             printf("O \n");
         }
         

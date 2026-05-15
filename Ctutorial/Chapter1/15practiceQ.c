@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 // area of circle
 int main() {
@@ -14,7 +15,7 @@ int main() {
 
     // printf("Area of circle = %f", pi * radius * radius);
     // return 0;
-
+    
     printf("Area of circle = %f ", 3.14 * radius * radius);
     return 0;
 }

@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 // ternary is very intersting
-// although it is for simple condtions
-// plus point is that it's shorterthan if-else
+// although it is for simple conditions
+// plus point is that it's shorter than if-else
 int main() {
     int marks;
     printf("enter your marks : ");
