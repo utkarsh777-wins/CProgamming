@@ -4,7 +4,7 @@ int main() {
     int *ptr = &val;
 
     printf("---Compiiiieeeeleeer Health Check--- \n");
-    printf("Success! GCC is recignised. \n");
+    printf("Success! GCC is recognised. \n");
     printf("Value: %d\n", val);
     printf("Pointer Address: %p\n", (void*)ptr);
     printf("-------------------------------------/");
