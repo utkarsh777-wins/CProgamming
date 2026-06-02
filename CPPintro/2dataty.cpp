@@ -29,7 +29,7 @@ int main() {
     float y;
     double z;
 
-    char star = '*';
+    char star;
     // std::cin >> a >> b >> c >> y >> z >> star;
     // since char doesn't skip whitespaces, unlike other operators hence is why we get the error 
     // std::cin >> a >> b >> c >> y >> z >> std::ws >> star; //that still didn't quite go right, looks like I'll just have to do the sepeately 
@@ -41,10 +41,11 @@ int main() {
     std::cin >> a >> b >> c >> y >> z; // now that made me humble
     // std::cin >> std::ws;
     // star = std::cin.get();
+    //ghosts live in this place, it smh worked this time 
+    std::cin >> star;
     
     
     std::cout << a << std::endl << b << std::endl << c << "\n" << y << "\n" << z << std::endl << star << std::endl;
-
     return 0;
 
 }
