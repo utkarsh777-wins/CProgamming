@@ -57,6 +57,20 @@ void carpeD(char c, int n) {
     }
 }
 
+void callByValue(int a, int b) {
+    int c = a;
+    a = b;
+    b = c;
+    printf("a=%d, b=%d\n", a, b);
+}
+void callByReference(int* a, int* b) {
+    int c = *a;
+    *a = *b;
+    *b = c;
+    printf("a=%d, b=%d\n", *a, *b);
+}
+
+
 int main() {
     char c = 'A';
     int n = 4;
@@ -68,6 +82,13 @@ int main() {
     std::cout << std::endl;
 
     carpeD(c, n);
+
+    printf("\n");
+    int x=4, y=5;
+    callByValue(x,y);
+    printf("real ones a=%d, b=%d\n", x, y);
+    callByReference(&x,&y);
+    printf("real ones a=%d, b=%d\n", x, y);
 
     return 0;
 }
