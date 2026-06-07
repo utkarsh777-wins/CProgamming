@@ -10,3 +10,7 @@ Release/
 
 # Ignore VS Code settings
 .vscode/
+
+# I/O files 
+input.txt
+output.txt
