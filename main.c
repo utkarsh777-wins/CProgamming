@@ -21,25 +21,42 @@
 //     }
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//     /*
+//     A
+//     AB
+//     ABC
+//     ABCD
+//     ABCDE
+//     */
+//     char c = 'A';
+//     for(int i=0; i<16; i++) {
+//         printf("%c", c);
+//         for(int j=i-1; j>0; j--) {
+//             printf("%c", c+(i-j));
+//         }
+//         if(i == 0) {printf("\n");}
+//         else {printf("%c\n", c+i);}
+//she says this is overengineered-lol
+//     }
+
+//     return 0;
+// }
+
 #include <stdio.h>
 
+//now that's neat
 int main() {
-    /*
-    A
-    AB
-    ABC
-    ABCD
-    ABCDE
-    */
     char c = 'A';
-    for(int i=0; i<16; i++) {
-        printf("%c", c);
-        for(int j=i-1; j>0; j--) {
-            printf("%c", c+(i-j));
-        }
-        if(i == 0) {printf("\n");}
-        else {printf("%c\n", c+i);}
+    int rows = 5;
 
+    for(int i=0; i<rows; i++) {
+        for(int j=0; j<=i; j++) {
+            printf("%c", c+j);
+        }
+        printf("\n");
     }
 
     return 0;
