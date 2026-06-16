@@ -180,16 +180,26 @@ void printRstar(int n) {
 }
 
 void printSymmetric(int n) {
-    for(int i=1; i<n*2; i++) {
-        if(i<=n) {
-            for(int j=0; j<i; j++) {
-                std::cout << "*";
-            }
-        } else if(i > n && i <= n*2) {
-            for(int j=0; j<n*2-i; j++) {
-                std::cout << "*";
-            }
+    // for(int i=1; i<n*2; i++) {
+    //     if(i<=n) {
+    //         for(int j=0; j<i; j++) {
+    //             std::cout << "*";
+    //         }
+    //     } else if(i > n && i <= n*2) {
+    //         for(int j=0; j<n*2-i; j++) {
+    //             std::cout << "*";
+    //         }
+    //     }
+    //     std::cout << std::endl;
+    // }
+    for(int i=1; i<=n*2-1; i++) {
+        int stars =i;
+        if(i > n) {stars = 2*n-i;}
+
+        for(int j=0; j<stars; j++) {
+            std::cout << "*";
         }
+
         std::cout << std::endl;
     }
 }
