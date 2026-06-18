@@ -202,7 +202,71 @@ void printSymmetric(int n) {
 
         std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
+
+void binPattern(int n) {
+
+    int start = 0;
+    for(int i=0; i<n; i++) {
+        if(i%2 == 0) {start = 1;} else {start = 0;}
+
+        for(int j=0; j<=i; j++) {
+            std::cout << start << " ";
+            start = 1 - start;
+        }
+        std::cout << std::endl;
+        
+    }
+    std::cout << std::endl;
+}
+
+// void numPattern(int n) {
+//     for(int i=1; i<n; i++){
+//         for(int j=1; j<=i; j++) {
+//             std::cout << j;
+//         }
+//         for(int k=0; k<2*(n-i-1); k++) {
+//             std::cout << " ";
+//         }
+//         for(int j=i; j>0; j--) {
+//             std::cout << j;
+//         }
+//         std::cout << std::endl;
+//     }
+// }
+void numPattern(int n) {
+    int space = 2*(n-1);
+    for(int i=1; i<=n; i++) {
+        for(int j=1; j<=i; j++) {
+            std::cout << j;
+        }
+        for(int j=0; j<space; j++) {
+            std::cout << " ";
+        }
+        for(int j=i; j>0; j--) {
+            std::cout << j;
+        }
+        space -= 2;
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
+
+void cRight(int n) {
+
+    int start=1;
+    for(int i=1; i<=n; i++) {
+        for(int j=1; j<=i; j++) {
+            std::cout << start << " ";
+            start++;
+        }
+
+        std::cout <<std::endl;
+    }
+    std::cout <<std::endl;
+}
+
 
 int main() {
     sqStar();
@@ -220,6 +284,9 @@ int main() {
     printStar(n);
     printRstar(n);
     printSymmetric(n);
+    binPattern(n);
+    numPattern(n);
+    cRight(n);
 
 
     return 0;
