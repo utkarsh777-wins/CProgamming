@@ -267,6 +267,36 @@ void cRight(int n) {
     std::cout <<std::endl;
 }
 
+void rightChar(int n) {
+    for(int i=0; i<n; i++) {
+        for(char c = 'A'; c<='A'+i; c++) {
+            std::cout << c << " ";
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
+
+void invRC(int n) {
+    for(int i=n-1; i>=0; i--) {
+        for(char c = 'A'; c<='A'+i; c++) {
+            std::cout << c << " ";
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
+
+void sameChar(int n) {
+    for(int i=0; i<n; i++) {
+        char c = 'A'+i;
+        for(int j=0; j<=i; j++) {
+            std::cout << c << " ";
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
 
 int main() {
     sqStar();
@@ -287,6 +317,9 @@ int main() {
     binPattern(n);
     numPattern(n);
     cRight(n);
+    rightChar(n);
+    invRC(n);
+    sameChar(n);
 
 
     return 0;
