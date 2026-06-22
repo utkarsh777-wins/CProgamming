@@ -298,6 +298,42 @@ void sameChar(int n) {
     std::cout << std::endl;
 }
 
+void revrend(int n) {
+    for(int i=0; i<n; i++) {
+        char ch = 'A';
+        
+        for(int j=n-i-1; j<n; j++) {
+            //ahh so this was messing up the patterm by adding to the existing change each time
+            ch = ch+j;
+            std::cout << ch << " ";
+            //so I reassigned it to 'A' so that adding j ovber and over again won't be a proble anymore..
+            ch = 'A';
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
+
+void justify(int n) {
+    for(int i=0; i<n; i++) {
+        for(int s=0; s<n-i-1; s++) {
+            std::cout << " ";
+        }
+        char ch = 'A';
+        int breakPoint = (2*i+1)/2;
+        for(int j=0; j<2*i+1; j++) {
+            std::cout << ch;
+            if(j<breakPoint) {ch++;}
+            else {ch--;}
+        }
+        for(int s=0; s<n-i-1; s++) {
+            std::cout << " ";
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
+
 int main() {
     sqStar();
     std::cout << std::endl;
@@ -320,6 +356,8 @@ int main() {
     rightChar(n);
     invRC(n);
     sameChar(n);
+    justify(n);
+    revrend(n);
 
 
     return 0;
