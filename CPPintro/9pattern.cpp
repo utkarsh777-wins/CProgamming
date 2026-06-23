@@ -334,6 +334,83 @@ void justify(int n) {
     std::cout << std::endl;
 }
 
+// void voidPrism(int n) {
+//     for(int i=0; i<=n*2; i++) {
+        
+//         //star count
+//         int str = n-i;
+//         if(i==n) {continue;}
+//         if(i>=n) {str = i-n;} 
+
+//         //stars
+//         for(int s =0; s<str; s++) {
+//             std::cout << "*";
+//         }
+ 
+//         //spaces
+//         int v = i*2;
+//         if(i>=n) {v = (2*n-i)*2;}
+//         for(int j=0; j<v; j++) {
+//             std::cout << " ";
+//         }
+
+//         //stars
+//         for(int s=0; s<str; s++) {
+//             std::cout << "*";
+//         }
+//         std::cout << std::endl;
+//     }
+//     std::cout << std::endl;
+// }
+void voidPrism(int n) {
+
+    int spaces = 0;
+    // upper half 
+    for(int i=0; i<n; i++) {
+
+        //stars
+        for(int j=0; j<n-i; j++) {
+            std::cout << "*";
+        }
+
+        //spaces 
+        for(int s=0; s<spaces; s++) {
+            std::cout << " ";
+        }
+
+        //stars
+        for(int j=0; j<n-i; j++) {
+            std::cout << "*";
+        }
+
+        spaces +=2;
+        std::cout << std::endl;
+    }
+
+    //lower half
+    spaces = 2*n-2;
+    for(int i=1; i<=n; i++) {
+
+        //stars
+        for(int j=0; j<i; j++) {
+            std::cout << "*";
+        }
+
+        //spaces
+        for(int s = 0; s<spaces; s++) {
+            std::cout << " ";
+        }
+        
+        //stars
+        for(int j=0; j<i; j++) {
+            std::cout << "*";
+        }
+        
+        spaces -= 2;
+        printf("\n");
+    }
+}
+
 int main() {
     sqStar();
     std::cout << std::endl;
@@ -358,7 +435,7 @@ int main() {
     sameChar(n);
     justify(n);
     revrend(n);
-
+    voidPrism(n);
 
     return 0;
 }
