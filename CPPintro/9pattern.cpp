@@ -80,6 +80,7 @@ void RightCount(int n) {
 
         } printf("\n");
     }
+  printf("\n");
 }
 /*
 1
@@ -97,6 +98,13 @@ void rightCount(int n) {
     }
 }
 
+/*
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+*/
 void rightInvStar(int n) {
     int i=n;
     while(i>0) {
@@ -111,6 +119,13 @@ void rightInvStar(int n) {
     std::cout << std::endl;
 }
 
+/*
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+*/
 void InvRightCount(int n) {
     for(int i=1; i<=n; i++) {
         for(int j=1; j<=n-i+1; j++) {
@@ -157,6 +172,18 @@ void printStar(int n) {
         *
     */
 
+/*
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+*********
+ ******* 
+  *****  
+   ***   
+    *  
+*/
 void printRstar(int n) {
     for(int i=0; i<n; i++) {
         //spaces 
@@ -179,6 +206,17 @@ void printRstar(int n) {
     std::cout << std::endl;
 }
 
+/*
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+*/
 void printSymmetric(int n) {
     // for(int i=1; i<n*2; i++) {
     //     if(i<=n) {
@@ -205,6 +243,13 @@ void printSymmetric(int n) {
     std::cout << std::endl;
 }
 
+/*
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+*/
 void binPattern(int n) {
 
     int start = 0;
@@ -221,6 +266,13 @@ void binPattern(int n) {
     std::cout << std::endl;
 }
 
+/*
+1        1
+12      21
+123    321
+1234  4321
+1234554321
+*/
 // void numPattern(int n) {
 //     for(int i=1; i<n; i++){
 //         for(int j=1; j<=i; j++) {
@@ -253,6 +305,13 @@ void numPattern(int n) {
     std::cout << std::endl;
 }
 
+/*
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+*/
 void cRight(int n) {
 
     int start=1;
@@ -267,6 +326,13 @@ void cRight(int n) {
     std::cout <<std::endl;
 }
 
+/*
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+*/
 void rightChar(int n) {
     for(int i=0; i<n; i++) {
         for(char c = 'A'; c<='A'+i; c++) {
@@ -277,6 +343,14 @@ void rightChar(int n) {
     std::cout << std::endl;
 }
 
+/*
+A B C D E 
+A B C D 
+A B C 
+A B 
+A 
+
+*/
 void invRC(int n) {
     for(int i=n-1; i>=0; i--) {
         for(char c = 'A'; c<='A'+i; c++) {
@@ -287,6 +361,13 @@ void invRC(int n) {
     std::cout << std::endl;
 }
 
+/*
+A 
+B B 
+C C C 
+D D D D 
+E E E E E 
+*/
 void sameChar(int n) {
     for(int i=0; i<n; i++) {
         char c = 'A'+i;
@@ -298,6 +379,13 @@ void sameChar(int n) {
     std::cout << std::endl;
 }
 
+/*
+E 
+D E 
+C D E 
+B C D E 
+A B C D E 
+*/
 void revrend(int n) {
     for(int i=0; i<n; i++) {
         char ch = 'A';
@@ -314,6 +402,13 @@ void revrend(int n) {
     std::cout << std::endl;
 }
 
+/*
+    A    
+   ABA   
+  ABCBA  
+ ABCDCBA 
+ABCDEDCBA
+*/
 void justify(int n) {
     for(int i=0; i<n; i++) {
         for(int s=0; s<n-i-1; s++) {
@@ -334,6 +429,18 @@ void justify(int n) {
     std::cout << std::endl;
 }
 
+/*
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
+*/
 // void voidPrism(int n) {
 //     for(int i=0; i<=n*2; i++) {
         
@@ -412,6 +519,17 @@ void voidPrism(int n) {
     printf("\n");
 }
 
+/*
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+*/
 void butterFly(int n) {
     
     int spaces = 2*n-2;
@@ -443,6 +561,13 @@ void butterFly(int n) {
     std::cout << std::endl;
 }
 
+/*
+*****
+*   *
+*   *
+*   *
+*****
+*/
 void square(int n) {
 
     for(int i=0; i<n; i++) {
@@ -456,6 +581,17 @@ void square(int n) {
     std::cout << std::endl;
 }
 
+/*
+555555555
+544444445
+543333345
+543222345
+543212345
+543222345
+543333345
+544444445
+555555555
+*/
 void toughOne(int n) {
     for(int i=0; i<2*n-1; i++) {
 
@@ -472,6 +608,7 @@ void toughOne(int n) {
     }
     std::cout << "\n";
 }
+
 int main() {
     sqStar();
     std::cout << std::endl;
