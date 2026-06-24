@@ -403,14 +403,75 @@ void voidPrism(int n) {
         
         //stars
         for(int j=0; j<i; j++) {
-            std::cout << "*";
+            std::cout << '*';
         }
         
         spaces -= 2;
         printf("\n");
     }
+    printf("\n");
 }
 
+void butterFly(int n) {
+    
+    int spaces = 2*n-2;
+    for(int i=1; i<2*n; i++) {
+
+        int stars = i;
+        if(i>n) {stars = 2*n-i;}
+
+        //stars 
+        for(int j = 0; j<stars; j++) {
+            std::cout << "*";
+        }
+
+        //spaces 
+        for(int s=0; s<spaces; s++) {
+            std::cout << " ";
+        }
+
+        //stars 
+        for(int j = 0; j<stars; j++) {
+            std::cout << "*";
+        }
+
+        if(i<n) {spaces-=2;}
+        else {spaces+=2;}
+
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
+
+void square(int n) {
+
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<n; j++) {
+            if(i == 0 || j == 0 || i == n-1 || j == n-1) {
+                std::cout << "*";
+            } else{std::cout << " ";}
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
+
+void toughOne(int n) {
+    for(int i=0; i<2*n-1; i++) {
+
+        for(int j=0; j<2*n-1; j++) {
+            
+            int top = i;
+            int down = 2*n - 2 - i;
+            int left = j;
+            int right = 2*n - 2 - j;
+
+            std::cout << (n - std::min(std::min(top, down), std::min(left, right)));
+        }
+        std::cout << "\n";
+    }
+    std::cout << "\n";
+}
 int main() {
     sqStar();
     std::cout << std::endl;
@@ -436,6 +497,9 @@ int main() {
     justify(n);
     revrend(n);
     voidPrism(n);
+    butterFly(n);
+    square(n);
+    toughOne(n);
 
     return 0;
 }
