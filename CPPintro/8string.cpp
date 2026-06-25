@@ -1,5 +1,6 @@
 #include <iostream>
-// #include <string>
+#include <string>
+//not  owrking without the headerfle huh
 
 void strInput(char str[]) {
     for(int i=0; str[i] !='\0'; i++) {
@@ -7,8 +8,9 @@ void strInput(char str[]) {
     }
 }
 int main() {
-    char name[];
-    // std::cin >> name;
-    strInput(name);
+    // char name[];
+    std::string name;
+    std::cin >> name;
+    // strInput(name);
     std::cout << name;
 }
