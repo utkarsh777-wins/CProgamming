@@ -35,6 +35,9 @@
 
 int main() {
 
+    //seed value
+    srand(time(NULL));
+
     int guess = 0;
     int lives = 10;
     int min = 1;
@@ -63,16 +66,23 @@ int main() {
         printf("Guess a number between %d - %d\n", min, max);
         scanf("%d", &guess);
         
-        // hints
-        if(guess < answer) {printf("TOO LOW\n");}
-        else if(guess > answer) {printf("TOO HIGH\n");}
-        else {printf("CORRECT\n");}
+        // each guess
+        if(guess < answer) {
+            printf("TOO LOW\n");
+            // one life burns on each failed guess
+            lives--;
+        } else if(guess > answer) {
+            printf("TOO HIGH\n");
+            // one life burns on each failed guess
+            lives--;
+        } else {
+            printf("CORRECT!!\n");
+            break;
+        }
 
 
         printf("<3 Remaining lives: %d\n", lives);
         
-        // one life burns on each failed guess
-        lives--;
         
     } while(guess != answer);
     
