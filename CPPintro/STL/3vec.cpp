@@ -85,6 +85,7 @@ void dynamicArr() {
     // deletion --erase function 
     // providing the address of the value we want to delete to the erase function 
     // deletes the exact one element whose address was given 
+
     v.erase(v.begin() + 1);
 
     // for deleting multiple elements 
@@ -95,12 +96,31 @@ void dynamicArr() {
     v.erase(v.begin() + 1, v.begin()+4);    // {10, 50, 60, 70}
 
 
-    // insert function --inseertion 
-    
+    // insert function --insertion 
 
+    vector<int> v(2, 100);  //stores two instances of 100 {100,100}'
+    // inserts 300 at the 0th idx followed by the rest of the data 
+    v.insert(v.begin(), 300);   //{300, 100, 100}
+    v.insert(v.begin() + 1, 2, 5);  //{300, 5, 5, 100, 100}
 
+    // copying one vector into another
+    vector<int> c(4, 50);   //{50, 50, 50, 50}\
+    // again, .insert(memory location where you want to store, what you want to store(value))
+    v.insert(v.begin(), c.begin(), c.begin());  //{50, 50, 50, 50, 300....}
 
+    // numbher of elements in a vector
+    cout << v.size();
 
+    // pops out the last elemnt of a vector 
+    v.pop_back();
+
+    // v1 -> {10, 20} & v2 -> {30, 40}
+    v1.swap(v2); // v1 -> {30,40} & v2 -> {10,20}
+
+    v.clear();   //erases the entire vector
+
+    // if function returns true if the vector is empty or else returns false 
+    cout << v.empty();
 
 }
 
