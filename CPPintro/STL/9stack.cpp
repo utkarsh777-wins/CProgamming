@@ -7,6 +7,7 @@ using namespace std;
 
 LIFO - last in first out 
 can't access stack elements through indexing 
+O(1) complexity -- all the operations are happening in constant time 
 
 */
 
