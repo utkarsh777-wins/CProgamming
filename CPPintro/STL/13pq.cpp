@@ -49,6 +49,7 @@ void pQueue() {
     cout << qp.top() << endl;
     qp.pop();
 
+    // distructive method of printing 
     while(!qp.empty()) {
         cout << qp.top() << " ";
         qp.pop();
